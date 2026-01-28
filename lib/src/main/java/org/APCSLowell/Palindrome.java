@@ -6,7 +6,9 @@ public class Palindrome {
     }
     public String reverse(String s) {
         String n = new String();
-        // your code here
+        for( int i = s.length()-1; i>=0; i--){
+            n+=s.charAt(i);
+        }
         return n;
     }
 }
