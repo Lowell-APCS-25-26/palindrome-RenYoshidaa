@@ -6,8 +6,12 @@ public class Palindrome {
     }
     public String reverse(String s) {
         String n = new String();
+        s = s.toLowerCase();
         for( int i = s.length()-1; i>=0; i--){
-            n+=s.charAt(i);
+            char c = s.charAt(i);
+        if(c>= 'a' && c <= 'z'){
+            n+=c;
+        }
         }
         return n;
     }
